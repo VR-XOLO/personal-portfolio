@@ -7,9 +7,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 20px;
     @include small-screen {
-        margin-top: 60px;
+        margin-top: 20px;
     }
     .app-logo {
         width: 100px;
@@ -18,8 +17,13 @@
             width: 143px;
         }
         img {
-            width: 100%;
-            display: block;
+             margin-top: 10px;
+            width: 45px;
+            @include small-screen {
+                width: 100%;    
+                display: block;
+                width: 55px; 
+            }
         }
     }
     .mobileMenu {

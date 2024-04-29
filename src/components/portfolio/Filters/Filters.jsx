@@ -7,20 +7,20 @@ const filtersData = [
         id: "all",
     },
     {
-        name: "E-com website",
+        name: "MERN-Chat-App",
+        id: "MERN",
+    },
+    {
+        name: "MovieShare Website",
+        id: "MovieShare",
+    },
+    {
+        name: "E-com Website",
         id: "Ecom",
     },
     {
-        name: "Word Counter",
-        id: "wordCounter",
-    },
-    {
-        name: "Weather Website",
-        id: "weather",
-    },
-    {
-        name: "Todo-List",
-        id: "todo",
+        name: "Freelance Project",
+        id: "Freelance",
     },
 ];
 

@@ -10,13 +10,12 @@
     align-items: center;
         width: 100%;
         .footer-logo{
-            width: 120px;
+            
             @include small-screen{
-                width: 150px;
             }
             img{
+                    width: 55px;
                     display: block;
-                    width: 100%;
             }
         }
         .footer-menu-items{

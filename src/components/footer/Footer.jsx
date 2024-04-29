@@ -12,7 +12,7 @@ import Section from "../shared/section/Section.jsx";
 import Social from "./social-icon/Social.jsx";
 
 import { scrolltoSection } from "../utils/Helper";
-import Logo from "../../images/logo.png";
+import Logo from "../../images/logo/logoFinal.svg";
 const Footer = () => {
     return (
         <>
@@ -88,7 +88,7 @@ const Footer = () => {
                     </div>
                     <div className="bottom-bar">
                         <div className="copyright-text">
-                        Copyright 2022 JS Dev Hindi | All Rights Reserved
+                        Copyright 2024 VR_XOLO | All Rights Reserved
                         </div>
 
                     </div>

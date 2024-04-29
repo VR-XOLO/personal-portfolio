@@ -4,7 +4,7 @@ import "./style.scss";
 import {CgMenuRight} from "react-icons/cg";
 import {IoMdClose} from "react-icons/io"
 
-import logo from "../../../images/rLogo.png";
+import logo from "../../../images/logo/logoFinal.svg";
 // import logo from "../../../images/logo.png";
 import CallToAction from "../../shared/CallToAction/CallToAction";
 import { scrolltoSection } from "../../utils/Helper";
@@ -25,9 +25,9 @@ const Navigation = () => {
                 </div>
                 <div className="mobileMenu" onClick={()=>setMobileMenu(!mobileMenu)}>
                     {mobileMenu ? (
-                        <IoMdClose  size={24} color="#fff" />
+                        <IoMdClose  size={30} color="#fff"  style={{position : "fixed", right : "10px", top : "20px"}}/>
                     ) : (
-                        <CgMenuRight  size={24} color="#fff" />
+                        <CgMenuRight  size={30} color="#fff" />
                     ) }
                 </div>
                 <div className={`navigation ${mobileMenu? "active" : ""}`}>

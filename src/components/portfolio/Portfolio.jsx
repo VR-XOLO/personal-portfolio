@@ -3,73 +3,66 @@ import React, { useState } from "react";
 import Section from "../shared/section/Section";
 import Filter from "./Filters/Filters";
 import Showcase from "./showcase/Showcase";
-// import "./style.scss";
-// import img1 from "../../images/thumbnail/food-order.jpg";
-// import img2 from "../../images/thumbnail/nature-1.jpg";
-// import img3 from "../../images/thumbnail/todo.jpg";
-// import img4 from "../../images/thumbnail/weather.jpg";
-// import img5 from "../../images/thumbnail/Ecom.jpg";
-// import img6 from "../../images/thumbnail/wr.jpg";
-import img1 from "../../images/portfolio/thumb-1.jpg";
-import img2 from "../../images/portfolio/thumb-2.jpg";
-import img3 from "../../images/portfolio/thumb-3.jpg";
-import img4 from "../../images/portfolio/thumb-4.jpg";
-import img5 from "../../images/portfolio/thumb-5.jpg";
-import img6 from "../../images/portfolio/thumb-6.jpg";
+import "./style.scss";
+
+import img1 from "../../images/thumbnail/MERN.jpg";
+import img2 from "../../images/thumbnail/movie.png";
+import img3 from "../../images/thumbnail/e-com.jpg";
+import img4 from "../../images/thumbnail/weather.jpg";
+import img5 from "../../images/thumbnail/todo.jpg"
+import img6 from "../../images/thumbnail/freeLance.jpg";
 
 
 
 const projectsData = [
     {
         id: 1,
-        name: "food ordering website",
-        tags: ["Ecom"],
+        name: "MERN Chat App",
+        tags: ["MERN"],
         img: img1,
-        liveLink : "https://phenomenal-flan-3b1523.netlify.app/",
-        sourceLink : "https://github.com/VR-XOLO/food-website",
+        liveLink : "https://node-talk.onrender.com/",
+        sourceLink : "https://github.com/VR-XOLO/node-talk",
     },
     {
         id: 2,
-        name: "Nature Website",
-        tags: ["Ecom"],
+        name: "MovieShare Website",
+        tags: ["MovieShare"],
         img: img2,
-        liveLink : "https://naturee-web.netlify.app",
-        sourceLink : "https://github.com/VR-XOLO/nature_project",
+        liveLink : "https://movieeshare.netlify.app/",
+        sourceLink : "https://github.com/VR-XOLO/Cinemate",
     },
     {
         id: 3,
-        name: "Todo List",
-        tags: ["todo"],
+        name: "E-com Website",
+        tags: ["Ecom"],
         img: img3,
-        liveLink : "https://notes-appss.netlify.app",
-        sourceLink : "https://github.com/VR-XOLO/todoList",
+        liveLink : "https://soccerstyle.netlify.app/",
+        sourceLink : "https://github.com/VR-XOLO/e-com-soccer-style-",
     },
     {
         id: 4,
         name: "Weather Website",
-        tags: ["weather"],
+        tags: ["mini"],
         img: img4,
         liveLink : "https://weathercheck-website.netlify.app/",
         sourceLink : "https://github.com/VR-XOLO/weather-app",
     },
     {
         id: 5,
-        name: "Ecom Website",
-        tags: ["Ecom"],
+        name: "todo",
+        tags: ["mini"],
         img: img5,
-        liveLink : "https://soccerstyle.netlify.app",
-        sourceLink : "https://github.com/VR-XOLO/e-com-soccer-style-",
+        liveLink : "https://notes-appss.netlify.app/",
+        sourceLink : "https://github.com/VR-XOLO/todoList",
     },
     {
         id: 6,
-        name: "Word Counter",
-        tags: ["wordCounter"],
+        name: "Photography Portfolio",
+        tags: ["Freelance"],
         img: img6,
-        liveLink : "https://wordss-counter.netlify.app",
-        sourceLink : "https://github.com/VR-XOLO/word_counter",
+        liveLink : "https://aarav-films.netlify.app/",
+        sourceLink : "https://github.com/VR-XOLO/Photography-Portfolio",
     },
-  
-    
 ];
 
 const Portfolio = () => {
@@ -99,14 +92,15 @@ const Portfolio = () => {
                 title="Check Our Portfolio"
                 background="light"
             >
-                <div className="portfolio-content-wrapper">
+                <div className="portfolio-content-wrapper"  style={{display : "flex", flexDirection : "column" , width : "100%", overflow: "auto"}}>
                     <Filter filterProjects={(tag) => filterProjects(tag)} />
+                    </div>
                     <Showcase
                         data={projects}
                         transition={transition}
                         key={projectsData.id}
                     />
-                </div>
+               
             </Section>
         </>
     );
