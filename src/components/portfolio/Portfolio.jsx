@@ -12,8 +12,6 @@ import img4 from "../../images/thumbnail/weather.jpg";
 import img5 from "../../images/thumbnail/todo.jpg"
 import img6 from "../../images/thumbnail/freeLance.jpg";
 
-
-
 const projectsData = [
     {
         id: 1,
