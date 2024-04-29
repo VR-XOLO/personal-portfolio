@@ -2,7 +2,7 @@ import "./style.scss";
 import Section from "../shared/section/Section.jsx";
 import TechIcons from "../../images/tech-icons.png";
 import CallToAction from "../shared/CallToAction/CallToAction.jsx";
-import resume from "../../images/Sahil_resume.pdf"
+import resume from "../../images/sahil_resume.pdf"
 const Skills = () => {
     return (
         <>
